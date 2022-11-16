@@ -53,7 +53,7 @@ exclude_patterns = []
 html_theme =  'furo' # 'sphinx_rtd_theme'
 
 html_theme_options = {
-    "source_repository": "https://github.com/nat-dep-clg-chnu-ce/nat-dep-clg-chnu-ce.github.io/",
+    "source_repository": "https://github.com/nat-dep-clg-chnu/template-work-plan/",
     "source_branch": "main",
     "source_directory": "docs/source/",
 }
