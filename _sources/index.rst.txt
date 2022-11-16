@@ -7,7 +7,7 @@
 =======================================
 
 .. toctree::
-      test
+      info/index
       api
       test1
 
