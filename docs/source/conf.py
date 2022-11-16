@@ -32,6 +32,7 @@ author = 'Природниче відділення'
 # ones.
 extensions = [
     "sphinx.ext.autodoc",
+    'sphinxcontrib.tikz',
     # External stuff
     "myst_parser",
 ]
