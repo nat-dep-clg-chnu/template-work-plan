@@ -2,9 +2,9 @@
 hide-toc: true
 ---
 
-# Furo 2022-2023
+# 2022-2023
 
-A clean customisable Sphinx documentation theme.
+План роботи циклової комісії
 
 ```{include} ../../../README.md
 :start-after: <!-- start elevator-pitch -->
@@ -14,7 +14,7 @@ A clean customisable Sphinx documentation theme.
 ```{toctree}
 :hidden:
 
-quickstart
+КОРОТКА ДОВІДКА ПРО ЦИКЛОВУ КОМІСІЮ
 customisation/index
 reference/index
 recommendations
