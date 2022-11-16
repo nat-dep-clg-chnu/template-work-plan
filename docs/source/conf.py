@@ -22,7 +22,7 @@ copyright = '2022, Природниче Відділення'
 author = 'Природниче відділення'
 
 # The full version, including alpha/beta/rc tags
-release = '0'
+# release = '0'
 
 
 # -- General configuration ---------------------------------------------------
