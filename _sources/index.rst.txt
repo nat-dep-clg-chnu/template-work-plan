@@ -3,13 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Зміст
+2022-2023 н.р.
 =======================================
 
 .. toctree::
-      info/index
-      api
-      test1
+   :hidden:
+   
+   info/index
+   api
+   test1
 
 Indices and tables
 ==================
