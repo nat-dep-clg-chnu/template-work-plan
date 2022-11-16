@@ -6,7 +6,7 @@ hide-toc: true
 
 A clean customisable Sphinx documentation theme.
 
-```{include} ../README.md
+```{include} ../../../README.md
 :start-after: <!-- start elevator-pitch -->
 :end-before: <!-- end elevator-pitch -->
 ```
