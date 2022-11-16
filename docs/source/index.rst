@@ -7,6 +7,7 @@
 =======================================
 
 .. toctree::
+   :numbered:
    :hidden:
    
    info/index
