@@ -2,7 +2,7 @@
 hide-toc: true
 ---
 
-# Furo
+# Furo 2022-2023
 
 A clean customisable Sphinx documentation theme.
 
