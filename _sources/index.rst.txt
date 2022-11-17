@@ -11,7 +11,7 @@
    :hidden:
    
    info/index
-   api
+   meetings/index
    test1
 
 Indices and tables
