@@ -34,6 +34,7 @@ extensions = [
     'matplotlib.sphinxext.plot_directive',
     "sphinx.ext.autodoc",
     'sphinxcontrib.tikz',
+    'sphinx.ext.todo',
     # External stuff
     "myst_parser",
 ]
@@ -65,14 +66,109 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+latex_engine = 'pdflatex'
+latex_theme = 'howto'
+latex_additional_files = ["mystyle.sty"]
 latex_elements = {
     'papersize': 'a4paper',
-    'preamble': r'''
-\usepackage[utf8]{inputenc}	
-\usetikzlibrary{arrows}
-''',
+    'inputenc': '\\usepackage[utf8]{inputenc}',
+           'pointsize': '12pt',
+    'preamble': r'\usepackage{mystyle}',
     'babel': r'''
     \usepackage[ukrainian]{babel}
     ''',
+    
+    'maketitle': r'''
+        \pagenumbering{Roman} %%% to avoid page 1 conflict with actual page 1
+        \begin{titlepage}
+            \centering
+
+            \vspace*{40mm} %%% * is used to give space from top
+            \textbf{\Huge {ПЛАН РОБОТИ}}
+
+            \vspace{0mm}
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[scale=0.3]{logo.png}
+            \end{figure}
+
+            \vspace{0mm}
+            \Large \textbf{{ЦК}}
+
+            \small Чернівці, 2022
+
+            \vspace*{0mm}
+
+
+            %% \vfill adds at the bottom
+            \vfill
+            \small \textit{Більше корисної інформації можна дізнатися на }{\href{http://college-chnu.cv.ua/}{ВСП <<Фаховий коледж ЧНУ>>}}
+        \end{titlepage}
+
+
+        \begin{titlepage}
+            \centering
+
+\begin{normalsize}
+\textbf{МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ\\
+Чернівецький національний університет імені Юрія Федьковича\\}
+\end{normalsize}
+{\small  \textbf{Відокремлений структурний підрозділ "Фаховий коледж Чернівецького національного університету імені Юрія Федьковича"}}
+
+            \vspace*{20mm} %%% * is used to give space from top
+            
+\begin{tabular}{p{8cm}p{8cm}}
+\begin{flushleft}
+\begin{minipage}{8cm}
+<<ПОГОДЖЕНО>>\\ 
+Завідувач Природничого відділення\\
+\underline{\hspace{3cm}}~J.~Doe\\
+<<\underline{\hspace{0.5cm}}>> \underline{\hspace{4cm}}  20\underline{\hspace{0.5cm}}~р.\\
+\end{minipage}
+\end{flushleft}
+&
+\begin{flushright}
+\begin{minipage}{8cm}
+<<ЗАТВЕРДЖУЮ>>\\ 
+Заступник директора з навчально-методичної роботи\\
+\underline{\hspace{3cm}}~J.~Doe\\
+<<\underline{\hspace{0.5cm}}>> \underline{\hspace{4cm}}  20\underline{\hspace{0.5cm}}~р.\\
+\end{minipage}
+\end{flushright} \\
+\end{tabular}
+
+\vspace{30mm} 
+            \textbf{\Huge {ПЛАН РОБОТИ}}
+            
+            \vspace{10mm}
+            \Large \textbf{{ЦК}}
+
+\vspace{10mm}
+            \large \textbf{{на 2022-2023 н.р.}}
+
+            
+            \vspace*{20mm}
+
+\begin{flushleft}
+\begin{minipage}{12cm}
+План обговорено на засіданні циклової комісії\\ 
+    Протокол №\underline{\hspace{0.5cm}} від <<\underline{\hspace{0.5cm}}>> \underline{\hspace{1cm}}  20\underline{\hspace{0.5cm}}~р.\\    
+Голова циклової комісії "Прикладної математики та інформаційних технологій"\\
+\underline{\hspace{3cm}}~J.~Doe\\
+<<\underline{\hspace{0.5cm}}>> \underline{\hspace{4cm}}  20\underline{\hspace{0.5cm}}~р.\\
+\end{minipage}
+\end{flushleft}
+
+            %% \vfill adds at the bottom
+            \vfill
+           \small Чернівці, 2022
+
+        \end{titlepage}
+
+        \clearpage
+        \pagenumbering{arabic}
+
+        ''',
 }
+latex_logo = '_static/logo.png'
 latex_show_urls = 'footnote'
